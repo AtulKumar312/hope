@@ -1,0 +1,38 @@
+<!-- home_page.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <p id="welcomeMessage"></p>
+    <p id="userName"></p>
+
+    <!-- Add a search bar -->
+    <input type="text" id="bookSearch" placeholder="Search for books">
+    <button onclick="searchBooks()">Search</button>
+    <button onclick="startSession()">Start Session</button>
+
+    <div id="searchResults"></div>
+
+    <!-- Divider for A course books -->
+    <hr>
+    <h2>A Course Books</h2>
+    <div id="aCourseBooks"></div>
+
+    <!-- Divider for B course books -->
+    <hr>
+    <h2>B Course Books</h2>
+    <div id="bCourseBooks"></div>
+
+    <!-- Divider for C course books -->
+    <hr>
+    <h2>C Course Books</h2>
+    <div id="cCourseBooks"></div>
+
+    <script src="home_page.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

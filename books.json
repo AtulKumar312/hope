@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Book 1",
+        "author": "Author 1",
+        "course": "A"
+    },
+    {
+        "id": 2,
+        "title": "Book 2",
+        "author": "Author 2",
+        "course": "B"
+    },
+    {
+        "id": 3,
+        "title": "Another Book",
+        "author": "Author 3",
+        "course": "C"
+    },
+    {
+        "id": 4,
+        "title": "Book 4",
+        "author": "Author 4",
+        "course": "A"
+    },
+    {
+        "id": 5,
+        "title": "Book 5",
+        "author": "Author 5",
+        "course": "B"
+    },
+    {
+        "id": 6,
+        "title": "Book 6",
+        "author": "Author 6",
+        "course": "C"
+    },
+    {
+        "id": 7,
+        "title": "Book 7",
+        "author": "Author 7",
+        "course": "A"
+    },
+    {
+        "id": 8,
+        "title": "Book 8",
+        "author": "Author 8",
+        "course": "B"
+    },
+    {
+        "id": 9,
+        "title": "Book 9",
+        "author": "Author 9",
+        "course": "C"
+    },
+    {
+        "id": 10,
+        "title": "Book 10",
+        "author": "Author 10",
+        "course": "A"
+    },
+    {
+        "id": 11,
+        "title": "Book 11",
+        "author": "Author 11",
+        "course": "B"
+    },
+    {
+        "id": 12,
+        "title": "Book 12",
+        "author": "Author 12",
+        "course": "C"
+    },
+    {
+        "id": 13,
+        "title": "Book 13",
+        "author": "Author 13",
+        "course": "A"
+    },
+    {
+        "id": 14,
+        "title": "Book 14",
+        "author": "Author 14",
+        "course": "B"
+    },
+    {
+        "id": 15,
+        "title": "Book 15",
+        "author": "Author 15",
+        "course": "C"
+    },
+    {
+        "id": 16,
+        "title": "Book 16",
+        "author": "Author 16",
+        "course": "A"
+    },
+    {
+        "id": 17,
+        "title": "Book 17",
+        "author": "Author 17",
+        "course": "B"
+    },
+    {
+        "id": 18,
+        "title": "Book 18",
+        "author": "Author 18",
+        "course": "C"
+    },
+    {
+        "id": 19,
+        "title": "Book 19",
+        "author": "Author 19",
+        "course": "A"
+    },
+    {
+        "id": 20,
+        "title": "Book 20",
+        "author": "Author 20",
+        "course": "B"
+    }
+]
