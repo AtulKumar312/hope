@@ -1,6 +1,7 @@
 // bookfound.js
 
 document.addEventListener('DOMContentLoaded', function () {
+    fetch('books.json')
     // Get the book details from the query parameter
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -20,8 +21,10 @@ function registerBook() {
         if (registrationChoice === 'yes') {
             // Handle book registration logic (e.g., send a request to the server)
             alert('Book registered successfully!');
+            window.location.href = `home_page.html`;
         } else {
             alert('Book not registered.');
+            window.location.href = `home_page.html`;
         }
     } else {
         alert('Please select an option.');
