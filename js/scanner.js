@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start scanning when the page loads
     const supportedFormats = ['QR_CODE'];
 
-
     scanner.start(
         { facingMode: 'environment' }, // Use the device's rear camera if available
         {
@@ -20,15 +19,23 @@ document.addEventListener('DOMContentLoaded', function () {
             qrbox: 250, // Size of the QR code scanner box
         },
         (qrCodeMessage) => {
-            // Check if the scanned QR code matches the expected book ID
-            if (qrCodeMessage === expectedBookId) {
-                // QR code matched the expected book ID, stop scanning
-                scanner.stop().then(() => {
-                    alert('QR code matched! Book found.');
-                    // Redirect to bookfound.html
-                    window.location.href = `bookfound.html?bookName=${bookName}&authorName=${authorName}`;
+            // Fetch the book details from books.json based on expectedBookId
+            fetch('books.json')
+                .then(response => response.json())
+                .then(data => {
+                    const foundBook = data.find(book => book.id.toString() === qrCodeMessage);
+
+                    if (foundBook) {
+                        const { title, author } = foundBook;
+                        // Redirect to bookfound.html with bookName and authorName
+                        window.location.href = `bookfound.html?bookName=${title}&authorName=${author}`;
+                    } else {
+                        console.log('Book not found');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching book data:', error);
                 });
-            }
         },
         (error) => {
             // Handle errors
